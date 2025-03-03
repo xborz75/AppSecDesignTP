@@ -57,5 +57,5 @@ module.exports = db;
 
 function endsWith(x,y) {
 	let index = x.lastIndexOf(y);
-	return x.lastIndexOf(y) === x.length - y.length
+	return index !== -1 && index === x.length - y.length;
 }
